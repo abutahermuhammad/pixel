@@ -42,11 +42,11 @@ const SecondaryNav: React.FC = () => {
 
     return (
         <nav className={Style.__secondaryNav}>
-            <Container className={Style.__secondaryNav__container}>
-                <ul className={Style.__secondaryMenu}>
+            <Container className={Style.__container}>
+                <ul className={Style.__menu}>
                     {LINKS.map((link, index) => (
-                        <li key={index} className={clsx(Style.__secondaryMenuItem)} data-menu={link.menu}>
-                            <Link className={Style.__secondaryMenuLink} href={link.url}>
+                        <li key={index} className={clsx(Style.__menuItem)} data-menu={link.menu}>
+                            <Link className={Style.__menuLink} href={link.url}>
                                 {link.label}
                             </Link>
                             {link.menu}

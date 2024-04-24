@@ -10,7 +10,6 @@ const NavigationBar = () => {
         <header className={Style.__header}>
             <PrimaryNav />
             <SecondaryNav />
-            <MegaMenu />
         </header>
     )
 }
