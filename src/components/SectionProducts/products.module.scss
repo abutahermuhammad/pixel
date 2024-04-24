@@ -1,146 +1,145 @@
 @import "./../../styles/typography.scss";
 
 .__area {
-    @apply relative block w-full mt-[83px];
+  @apply relative block w-full;
 }
 .__area_container {
-    @apply w-full relative;
+  @apply py-[31px] md:pt-[83px] w-full relative max-md:border-t max-md:border-t-light-gray;
 
-    .__card_wrapper {
-        @apply max-w-[296px] border-e border-e-gray;
-    }
+  .__card_wrapper {
+    @apply max-w-[296px] border-e border-e-gray;
+  }
 }
-
 
 // Product Card
 .__card {
-    @apply me-[35px] relative w-full max-w-[256px] h-[448px] flex flex-col justify-start items-center gap-4 overflow-hidden;
-    &:hover {
-        .__info {
-            @apply hidden transition-all duration-300;
-        }
-        .__extraAction {
-            @apply block transition-all duration-300;
-        }
+  @apply me-[35px] relative max-md:w-[223px] md:w-[256px] h-[448px] flex flex-col justify-start items-center gap-4 overflow-hidden;
+  &:hover {
+    .__info {
+      @apply hidden transition-all duration-300;
     }
+    .__extraAction {
+      @apply block transition-all duration-300;
+    }
+  }
 }
 .__card_thumbnail {
-    @apply w-full h-auto max-w-[253px] max-h-[237px] overflow-hidden flex justify-center items-center;
+  @apply w-full h-auto max-w-[253px] max-h-[237px] overflow-hidden flex justify-center items-center;
 }
 
 .__card_action {
-    @apply absolute top-2.5 right-1 flex gap-2 justify-end items-center;
+  @apply absolute top-2.5 right-1 flex gap-2 justify-end items-center;
 }
 .__action_wishlist {
-    @apply w-[24px] h-[24px];
+  @apply w-[24px] h-[24px];
 }
 .__action_compare {
-    @apply w-[24px] h-[24px];
+  @apply w-[24px] h-[24px];
 }
 
 .__card_body {
-    @apply w-full;
+  @apply w-full;
 }
 
 .__header {
-    @apply flex justify-between items-start;
+  @apply flex justify-between items-start;
 }
 .__header_heading {
-    @apply w-full;
-    max-width: calc(100% - 42px);
+  @apply w-full;
+  max-width: calc(100% - 42px);
 }
 .__title {
-    @apply h3 text-black;
+  @apply h3 text-black;
 }
 .__brand {
-    @apply text text-black;
+  @apply text text-black;
 }
 
 .__rating {
-    @apply w-[42px] h-[24px] flex gap-1.5 justify-end items-center;
+  @apply w-[42px] h-[24px] flex gap-1.5 justify-end items-center;
 
-    .__rating_icon {
-        @apply block w-3 h-3;
-    }
-    .__rating_text {
-        @apply text text-dark-grey;
-    }
+  .__rating_icon {
+    @apply block w-3 h-3;
+  }
+  .__rating_text {
+    @apply text text-dark-grey;
+  }
 }
 
 .__details {
-    @apply mt-1.5 w-full min-h-[87px] flex flex-col justify-start items-start;
+  @apply mt-1.5 w-full min-h-[87px] flex flex-col justify-start items-start;
 }
 .__info {
-    @apply transition-all duration-300;
+  @apply transition-all duration-300;
 }
 .__description {
-    @apply subText text-dark-grey;
+  @apply subText text-dark-grey;
 }
 .__info_list {
-    @extend .__description;
-    @apply list-disc ms-[22px];
+  @extend .__description;
+  @apply list-disc ms-[22px];
 }
 .__info_lisListItem {
-    @extend .__description;
+  @extend .__description;
 }
 
 .__extraAction {
-    @apply w-full h-full bg-white hidden transition-all duration-300;
+  @apply w-full h-full bg-white hidden transition-all duration-300;
 
-    .__packages {
-        @apply relative w-full h-[37px] flex justify-between items-center border border-dark-grey rounded-full z-0;
-        
-        .__animationBg {
-            @apply absolute top-0 left-0 w-full h-full bg-primary rounded-full opacity-0;
-            transition: .3s left, .3s right, .2s opacity;
-        }
-        .__package {
-            @apply w-full h-[inherit] flex justify-center items-center bg-none rounded-full z-10 hover:bg-primary hover:text-white active:bg-primary active:text-white;
-            &.__package_selected {
-                @apply bg-primary text-white;
-            }
-        }
+  .__packages {
+    @apply relative w-full h-[37px] flex justify-between items-center border border-dark-grey rounded-full z-0;
+
+    .__animationBg {
+      @apply absolute top-0 left-0 w-full h-full bg-primary rounded-full opacity-0;
+      transition: 0.3s left, 0.3s right, 0.2s opacity;
     }
-    .__quantityForm {
-        @apply mt-[13px] z-20;
-
-        .__quantityControllerWrapper {
-            @apply relative w-full h-[37px] flex justify-between items-center bg-white border border-dark-grey rounded-full;
-            .__quantityController {
-                @apply w-[42px] h-[35px] flex justify-center items-center bg-primary text-white border-none hover:opacity-75 disabled:opacity-50;
-                &:first-of-type {
-                    @apply rounded-l-full;
-                }
-                &:last-of-type {
-                    @apply rounded-r-full;
-                }
-            }
-            .__quantityValue {}
-        }
+    .__package {
+      @apply w-full h-[inherit] flex justify-center items-center bg-none rounded-full z-10 hover:bg-primary hover:text-white active:bg-primary active:text-white;
+      &.__package_selected {
+        @apply bg-primary text-white;
+      }
     }
+  }
+  .__quantityForm {
+    @apply mt-[13px] z-20;
 
+    .__quantityControllerWrapper {
+      @apply relative w-full h-[37px] flex justify-between items-center bg-white border border-dark-grey rounded-full;
+      .__quantityController {
+        @apply w-[42px] h-[35px] flex justify-center items-center bg-primary text-white border-none hover:opacity-75 disabled:opacity-50;
+        &:first-of-type {
+          @apply rounded-l-full;
+        }
+        &:last-of-type {
+          @apply rounded-r-full;
+        }
+      }
+      .__quantityValue {
+      }
+    }
+  }
 }
 
 // Footer Area
 .__footer {
-    @apply w-full mt-[18px];
+  @apply w-full mt-[18px];
 }
 .__duration {
-    @apply w-1/2 flex justify-start items-center gap-[7px];
+  @apply w-1/2 flex justify-start items-center gap-[7px];
 }
 .__duration_icon {
-    @apply block w-5 h-5;
+  @apply block w-5 h-5;
 }
 .__duration_value {
-    @apply text text-black;
+  @apply text text-black;
 }
 
 .__price {
-    @apply absolute bottom-0 right-0 w-1/2 text-right z-10;
+  @apply absolute bottom-0 right-0 w-1/2 text-right z-10;
 }
 .__price_regular {
-    @apply text text-gray line-through;
+  @apply text text-gray line-through;
 }
 .__price_sale {
-    @apply h3 text-black me-[3px];
+  @apply h3 text-black me-[3px];
 }

@@ -10,7 +10,7 @@ import Container from '../Container';
 import ProductCard, { TProduct } from './ProductCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Virtual } from 'swiper/modules';
+import { FreeMode, Virtual } from 'swiper/modules';
 
 
 const PRODUCTS: TProduct[] = [
@@ -143,22 +143,20 @@ const SectionProducts = () => {
                     className=''
                     spaceBetween={35}
                     // slidesPerView={5}
+                    freeMode={true}
                     breakpoints={{
                         320: {
-                            slidesPerView: 1
-                        },
-                        768: {
-                            slidesPerView: 2
+                            slidesPerView: 1.3,
+                            spaceBetween: 22
                         },
                         1024: {
-                            slidesPerView: 3
+                            slidesPerView: 3.3
                         },
                         1440: {
                             slidesPerView: 5
                         }
                     }}
-                    virtual
-                    modules={[Virtual]}
+                    modules={[FreeMode]}
                 >
                     {PRODUCTS.map((product) => (
                         <SwiperSlide className='w-[256px]' id={product.id} key={product.id} >
