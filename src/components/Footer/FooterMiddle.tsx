@@ -11,6 +11,7 @@ import Facebook from '@/assets/icons/Facebook'
 import Twitter from '@/assets/icons/Twitter'
 import Phone from '@/assets/icons/Phone'
 import Email from '@/assets/icons/Email'
+import { NewsLetter } from './FooterTop'
 
 const SHOP_MENU = {
     title: "Shop",
@@ -156,6 +157,8 @@ const FooterMiddle = () => {
             <div className={Style.__contacts}>
                 <MenuWidget title="Contact Information" links={CONTACTS} />
             </div>
+
+            <NewsLetter />
         </Container>
     )
 }

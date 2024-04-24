@@ -7,11 +7,11 @@ import SectionSavings from "@/components/SectionSaving";
 export default function Home() {
   return (
     <>
-      <HeroSlider />
-      <SectionCategories />
-      <SectionGuide />
-      <SectionProducts />
-      <SectionSavings />
+      {/* <HeroSlider /> */}
+      {/* <SectionCategories /> */}
+      {/* <SectionGuide /> */}
+      {/* <SectionProducts /> */}
+      {/* <SectionSavings /> */}
     </>
   );
 }

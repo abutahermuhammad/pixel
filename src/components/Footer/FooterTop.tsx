@@ -28,15 +28,19 @@ const SOCIAL_LINKS = [
     }
 ];
 
-const NewsLetter = () => {
+export const NewsLetter = () => {
     return (
-        <div className={Style.__newsletter}>
+        <form className={Style.__newsletter}>
             <h3 className={Style.__newsletter_title}>Join our newsletter for exclusive offers!</h3>
 
-            <form className={Style.__newsletter_form}>
+            <div className={Style.__newsletter_form}>
                 <input className={Style.__newsletter_name} type="text" name='name' placeholder='Name' />
                 <input className={Style.__newsletter_email} type="email" name='email' placeholder='Email Address' />
-            </form>
+            </div>
+
+            <div className={Style.__formAction}>
+                <button type='submit' className={Style.__submitBtn}>SIGN UP</button>
+            </div>
 
             <div className={Style.__socialLinks}>
                 {SOCIAL_LINKS.map((item, index) => (
@@ -45,7 +49,7 @@ const NewsLetter = () => {
                     </Link>
                 ))}
             </div>
-        </div>
+        </form>
     )
 }
 

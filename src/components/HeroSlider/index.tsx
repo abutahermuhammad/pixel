@@ -47,7 +47,7 @@ const Slide: React.FC<{
     return (
         <div className={Style.__slide}>
             <div className={Style.__slide__image}>
-                <Image src={image} alt={title} layout="fill" />
+                <Image src={image} width={1968} height={727} alt={title} />
             </div>
             <div className={Style.__slide__container}>
                 <Container>
