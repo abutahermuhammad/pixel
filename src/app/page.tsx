@@ -9,9 +9,9 @@ export default function Home() {
     <>
       {/* <HeroSlider /> */}
       <SectionCategories />
-      {/* <SectionGuide /> */}
-      {/* <SectionProducts /> */}
-      {/* <SectionSavings /> */}
+      <SectionGuide />
+      <SectionProducts />
+      <SectionSavings />
     </>
   );
 }

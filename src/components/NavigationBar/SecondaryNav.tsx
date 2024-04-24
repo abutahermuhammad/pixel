@@ -6,7 +6,7 @@ import Link from 'next/link';
 import clsx from 'clsx';
 import MegaMenu from './MegaMenu';
 
-const LINKS = [
+export const LINKS = [
     {
         label: "Brands",
         url: "/brands"

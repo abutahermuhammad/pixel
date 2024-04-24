@@ -8,6 +8,7 @@ import MenuIcon from '@/assets/icons/MenuIcon';
 import Avater from '@/assets/icons/Avater';
 import Cart from '@/assets/icons/Cart';
 import Search from '@/assets/icons/Search';
+import Times from '@/assets/icons/Times';
 
 const LINKS = [
     {
@@ -27,12 +28,12 @@ const LINKS = [
     }
 ]
 
-const PrimaryNav: React.FC = () => {
+const PrimaryNav: React.FC<{ toggleMenu: () => void, isOpen: boolean }> = ({ toggleMenu, isOpen }) => {
     return (
         <nav className={Style.__primaryNav}>
             <Container className={Style.__primaryNav__container}>
-                <div className={Style.__menuIcon}>
-                    <MenuIcon />
+                <div className={Style.__menuIcon} onClick={toggleMenu}>
+                    {isOpen ? <Times /> : <MenuIcon />}
                 </div>
 
                 {/* Brand Logo */}

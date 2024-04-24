@@ -3,7 +3,7 @@ import Style from './navigationBar.module.scss';
 import Container from '../Container';
 import Link from 'next/link';
 
-const MENU = [
+export const MENU = [
     {
         category: "DIGITAL",
         links: [
@@ -68,6 +68,7 @@ const MENU = [
         ]
     }
 ]
+
 
 const MegaMenuItem: React.FC<{ label: string, url: string }> = ({ label, url }) => {
     return (
