@@ -27,6 +27,12 @@ const CATEGORIES = [
         description: "Highest quality accessories to fit your gear",
         url: "/"
     },
+    {
+        image: IMG2.src,
+        name: "Lenses",
+        description: "Find the sharpest lens for your photoshoot",
+        url: "/"
+    },
 ]
 
 const Card: React.FC<{
@@ -38,7 +44,7 @@ const Card: React.FC<{
     return (
         <div className={Style.__card} >
             <div className={Style.__card_image}>
-                <Image src={image} alt="image" layout="fill" />
+                <Image src={image} width={523} height={523} alt="image" />
             </div>
 
             <div className={Style.__card_container}>

@@ -1,50 +1,53 @@
 @import "./.././../styles/typography.scss";
 
 .__section {
-    @apply w-full relative block;
-    .__section_container {
-        @apply relative flex gap-4 pt-[73px];
-        
-        
-// Card
-.__card {
-    @apply relative w-full max-w-[523px] h-[400px] flex justify-center items-center;
-    &:hover {
-        .__card_image {
-             @apply brightness-125;
-             transition: filter .3s ease;
-        }   
-        .__card_icon {
-            @apply -translate-x-14;
-        } 
-    }
+  @apply w-full relative block;
+  .__section_container {
+    @apply relative pt-7 md:pt-[73px] grid grid-cols-2 max-md:grid-rows-2 md:grid-cols-3 gap-3 md:gap-4;
 
-    .__card_image {
-        @apply absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover z-0;
-        transition: filter .3s ease;
-    }
-    .__card_container {
-        @apply w-full h-full py-[23px] ps-[29px] pe-[31px] flex justify-between items-end z-10;
-        
-        .__card_details { 
-            @apply w-full ;
-            max-width: calc(100% - 27px);
-            
-            .__card_title {
-                @apply h2 text-white;
-            }
-            .__card_description {
-                @apply text-gray text max-w-[calc(100%-47px)];
-            }
-            .__card_icon {
-                @apply w-[27px] h-[27px] absolute bottom-[23px] right-[31px] transition-all duration-300;
-            }
+    // Card
+    .__card {
+      @apply relative w-full md:max-w-[523px] md:h-[400px] flex max-md:flex-col justify-center items-center;
+      &:nth-of-type(4) {
+        @apply md:hidden;
+      }
+      &:hover {
+        .__card_image {
+          @apply brightness-125;
+          transition: filter 0.3s ease;
+        }
+        .__card_icon {
+          @apply md:-translate-x-14;
+        }
+      }
+
+      .__card_image {
+        @apply bg-red-400 md:absolute md:top-0 md:left-0 md:right-0 md:bottom-0 w-full h-full object-cover z-0;
+        transition: filter 0.3s ease;
+        img {
+          @apply w-full h-full object-cover;
+        }
+      }
+      .__card_container {
+        @apply w-full md:h-full md:py-[23px] md:ps-[29px] md:pe-[31px] flex justify-between items-end z-10;
+
+        .__card_details {
+          @apply w-full md:max-w-[calc(100%-27px)] max-md:flex max-md:justify-between max-md:items-center;
+
+          .__card_title {
+            @apply h2 max-md:text-black md:text-white;
+          }
+          .__card_description {
+            @apply max-md:hidden text-gray text max-w-[calc(100%-47px)];
+          }
+          .__card_icon {
+            @apply w-[14px] h-[14px] max-h-[14px] md:w-[27px] md:h-[27px] md:absolute md:bottom-[23px] md:right-[31px] transition-all duration-300;
+          }
         }
         .__card_link {
-            @apply h-[27px] h-[27px];
+          @apply h-[27px] h-[27px];
         }
+      }
     }
+  }
 }
-    }
-}
-

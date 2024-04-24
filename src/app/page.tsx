@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       {/* <HeroSlider /> */}
-      {/* <SectionCategories /> */}
+      <SectionCategories />
       {/* <SectionGuide /> */}
       {/* <SectionProducts /> */}
       {/* <SectionSavings /> */}
