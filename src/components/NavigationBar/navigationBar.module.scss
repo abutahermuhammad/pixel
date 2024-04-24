@@ -1,0 +1,77 @@
+@use "./../../styles/typography";
+@use "./../../styles/variables";
+
+.__header {
+    @apply bg-black h-[172px] flex flex-col z-20;
+}
+
+.__primaryNav {
+    @apply max-h-[87px] bg-black text-white ;
+}
+
+.__primaryNav__container {
+    @apply pt-[27px] pb-[30px] flex justify-between items-center;
+}
+
+.__logo {
+    margin-left: clamp(27px, 3.5vw, 67px);
+}
+.__actionMenu {
+    @apply max-w-min;
+}
+.__menu {
+    @apply inline-flex justify-end items-center gap-[31px]
+}
+.__menuItem {
+    // @apply w-[full] max-h-[30px] max-w-[30px];
+}
+.__menuLink {
+}
+.__menuIcon {
+    @apply min-w-[30px] w-[30px] h-auto max-w-[30px] max-h-[30px];
+}
+
+// Secondary Menu
+.__secondaryNav {
+    @apply w-full;
+}
+.__secondaryNav__container {}
+.__secondaryMenu {
+    @apply w-full inline-flex justify-between items-center gap-[31px]
+}
+.__secondaryMenuItem {
+    @apply w-full max-w-[266px] h-[85px] text-[#E9E9E9] flex justify-center items-center font-medium text-center hover:bg-primary h3;
+    &:hover {
+        .__megaMenu {
+            @apply visible opacity-100 top-[172px] ;
+            transition:.5s opacity, .2s top ease-in; 
+        }
+    }
+}
+.__secondaryMenuLink {}
+
+// Mega Menu
+.__megaMenu {
+    @apply w-full absolute top-[160px] left-0 right-0 z-10 bg-white invisible opacity-0 text-left;
+    transition: .5s opacity, .2s top ease-in; 
+    .__megaMenu__container {
+        @apply pt-[33px] pb-[41px] max-w-[921px] grid grid-cols-3;
+
+        .__megaMenu__category {
+            .__category_title {
+                @apply h3 mb-[5px] text-black underline uppercase;
+            }
+            .__category_links {
+                @apply text text-black;
+                .__megaMenuItem {
+                    .__megaMenuLink {}
+                }
+            }
+        }
+    }
+    .__megaMenu__content {}
+    .__megaMenuItem {
+        @apply text;
+    }
+    .__megaMenuLink {}
+}

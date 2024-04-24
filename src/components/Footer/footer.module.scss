@@ -1,0 +1,132 @@
+@import "./../../styles/typography.scss";
+
+.__area {
+    @apply relative w-full bg-black pt-[27px] pb-[33px];
+
+    // Footer Top Section
+    .__top_container {
+        @apply w-full max-[1600px]:px-[56px] min-[1600px]:max-w-[1532px]  pb-[31px] flex justify-between;
+        
+        // Contact Area
+        .__contact {
+            @apply flex items-center gap-[30px];
+            .__mapBox {
+                @apply relative w-full max-w-[219px] max-h-[163px] block;
+            }
+            .__address {
+                .__title {
+                    @apply h3 text-white mb-[7px];
+                }
+                .__address_line {
+                    @apply ms-[3px] flex gap-[17px] items-center mt-[15px];
+                    &:first-of-type {
+                        @apply mt-0;
+                    }
+                    .__icon {
+                        @apply w-[24px] max-h-[24px];
+                    }
+                    .__address_text {
+                        @apply text text-dark-grey;
+                    }
+                }
+            }
+        }
+
+        // Branding Area
+        .__brand {
+            @apply w-full max-w-[100px] flex justify-center items-center mb-[37px];
+        }
+
+        // Newsletter Area
+        .__newsletter {
+            @apply w-full max-w-[454px];
+            .__newsletter_title {
+                @apply h3 text-white mb-[11px];
+            }
+            .__newsletter_form {
+                @apply flex items-center gap-2;
+                .__newsletter_name {
+                    @apply bg-light-gray w-[193px];
+                }
+                .__newsletter_email {
+                    @extend .__newsletter_name;
+                    @apply w-[253px]
+                }
+            }
+            .__socialLinks {
+                @apply flex gap-[22px] mt-[18px];
+                .__socialLink {
+                    @apply w-[24px] h-[24px] max-w-[24px] max-h-[24px] flex justify-center items-center;
+                }
+            }
+        }
+    }
+
+    // Footer Middle Section
+    .__middle_container {
+        @apply w-full grid grid-cols-3 pt-[25px] border-t-[3px] border-t-dark-grey;
+    }
+    .__menus {
+        @apply flex gap-[87px];
+        .__shop {
+            @apply w-[218px] flex gap-[29px] justify-start items-end;
+            .__menu {
+                @apply max-w-[96px];
+            }
+        }
+    }
+    .__currencies {
+        @apply mx-auto grid grid-cols-2 gap-[5px];
+        .__currency {
+            @apply px-3 py-[1px] h3 text-gray bg-none border border-gray w-max h-[32px] flex justify-center items-center;
+            &:first-of-type, &.__selected, &:hover {
+                @apply text-black bg-primary border-primary;
+            }
+        }
+    }
+    .__contacts {
+        @apply w-[205px] ms-auto;
+    }
+
+    // FooterBar
+    .__footerBar {
+        @apply mt-[45px] w-full grid grid-cols-3 gap-[30px] text-dark-grey subText;
+
+        .__copyright {
+            @apply me-auto;
+        }
+        .__cards {
+            @apply -mb-2.5 w-max flex items-end gap-2 mx-auto;
+        }
+        .__links {
+            @apply ms-auto w-max flex items-end gap-[50px];
+            .__link {
+                @apply hover:text-gray;
+            }
+        }
+    }
+}
+
+// MenuWidget
+.__menu {
+    @apply w-full ;
+    .__menu_title {
+        @apply w-full h3 text-white mb-4;
+    }
+    .__menu_links {
+        @apply flex flex-col gap-[9px];
+        .__menu_link {
+            @apply min-w-max flex gap-2.5 justify-start items-center text text-dark-grey;
+            &:hover {
+                @apply text-gray;
+            }
+            .__icon {
+                @apply w-6 max-w-6 max-h-6;
+                svg {
+                    @apply w-6 max-w-6 max-h-6;
+                }
+            }
+            .__link_text {}
+        }
+    }
+}

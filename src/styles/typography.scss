@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+
+.h1 {
+    @apply leading-[auto] font-semibold md:font-bold;
+    font-family: $font-poppins;
+    font-size: clamp(1.625rem, 3.105vw + 0.895rem, 4rem);
+}
+
+.h2 {
+    @apply leading-[auto] font-medium md:font-semibold;
+    font-family: $font-poppins;
+    font-size: clamp(1.25rem, 0.98vw + 1.02rem, 2rem);
+}
+
+.h3 {
+    @apply leading-[auto] font-normal md:font-medium;
+    font-family: $font-poppins;
+    font-size: clamp(1.125rem, 0.163vw + 1.087rem, 1.25rem);
+}
+
+.text {
+    @apply text-base leading-[auto] max-md:font-light md:font-normal; 
+    font-family: $font-poppins;
+}
+
+.subText {
+    @apply leading-[auto] max-md:font-extralight md:font-light;
+    font-family: $font-poppins;
+    font-size: clamp(0.75rem, 0.163vw + 0.712rem, 0.875rem);
+}
+
+

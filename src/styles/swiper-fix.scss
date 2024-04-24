@@ -1,0 +1,13 @@
+// Swiper Fix
+.swiper-pagination-bullets {
+    bottom: 58.47px !important;
+    .swiper-pagination-bullet {
+        @apply bg-transparent border-2 border-white rounded-full w-[15.47px] h-[15.47px] opacity-100;
+        margin-left: 14px !important;
+        margin-right: 14px !important;
+
+        &.swiper-pagination-bullet-active {
+            @apply bg-primary border-primary;
+        }
+    }
+}

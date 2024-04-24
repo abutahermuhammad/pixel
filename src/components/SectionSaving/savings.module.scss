@@ -1,0 +1,107 @@
+@import "./../../styles/typography.scss";
+
+.__area {
+    @apply relative w-full mt-[81px] pb-[110px];
+    .__area_container {
+        .__area_title {
+            @apply h2 mb-2;
+        }
+
+        .__area_body {
+            @apply flex justify-start items-center gap-[36px];
+
+            .__area_image {
+                @apply w-full max-w-[657px] max-h-[476px];
+            }
+
+            // Section Content
+            .__area_content {
+                .__area_head {
+                    @apply w-full max-w-[6791x] mb-[47px];
+                    
+                    .__area_title {
+                        @apply h2 mb-[13px] text-black;
+                    }
+                    .__area_description {
+                        @apply text text-black;
+                    }
+                }
+
+                .__topSellers {
+                    @apply mb-[42px] max-w-[880px];
+                
+                    .__topSellers_title {
+                        @apply h3 text-black mb-2;
+                    }
+                
+                    .__topSellers_cards {
+                        @apply flex justify-start items-center gap-[90px];
+                    }
+                
+                }
+
+                // Actions
+                .__area_actions {
+                    @apply flex justify-start items-center gap-[23px];
+            
+                    .__actions_buy {
+                        @extend .button;
+                        @apply bg-primary border-primary text-white;
+                    }
+            
+                    .__actions_sell {
+                        @extend .button;
+                        @apply border-dark-grey text-dark-grey;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+}
+
+// Card
+.__card {
+    @apply w-full max-w-[248px];
+    .__card_head {
+        @apply flex justify-start items-start gap-[7px];
+
+        .__avatar {
+            @apply w-full h-full max-w-[75px] max-h-[75px];
+        }
+        .__card_info {
+            @apply w-full max-w-[166px];
+            .__seller_name {
+                @apply text text-black mb-[3px];
+            }
+            .__seller_description {
+                @apply subText text-black mb-[3px];
+            }
+            .__verifiedBadge {
+                @apply flex justify-start items-center gap-[6px];
+
+                .__badge_icon {
+                    @apply w-[15px] h-[15px];
+                }
+                .__badge_label {
+                    @apply subText text-dark-grey;
+                }
+            }
+        }
+    }
+
+    .__seller_body {
+        @apply w-full max-w-[166px] mt-[13px];
+        .__body_list {
+            @apply ms-[21px] w-full subText text-dark-grey list-disc;
+            .__body_line {}
+        }
+    }
+}
+
+
+.button {
+    @apply h-[44px] px-[56px] py-[7px] h3 text-center flex justify-center items-center border;
+}

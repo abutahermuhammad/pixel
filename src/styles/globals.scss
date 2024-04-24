@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./swiper-fix.scss";
+@import "./typography.scss";
+
+
+input {
+    @apply pt-2.5 pb-[11px] px-[14px] subText  text-dark-grey bg-transparent outline-none; 
+}
