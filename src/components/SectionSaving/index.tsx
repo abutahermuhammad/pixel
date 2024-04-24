@@ -88,28 +88,34 @@ const SellerCard: React.FC<TSeller> = ({ name, description, verified, image, bod
     );
 }
 
-const SectionContent = () => {
+const SectionHead = () => {
     return (
-        <div className={Style.__area_content}>
-            <div className={Style.__area_head}>
-                <h2 className={Style.__area_title}>Turn used gear into new possibilities</h2>
-                <p className={Style.__area_description}>We offer a reliable platform for buying and selling used photography gear. Whether you&apos;re a beginner looking for affordable equipment or a professional photographer in search of high-end gear at a discounted price, we&apos;ve got you covered. </p>
-            </div>
+        <div className={Style.__area_head}>
+            <h2 className={Style.__area_title}>Turn used gear into new possibilities</h2>
+            <p className={Style.__area_description}>We offer a reliable platform for buying and selling used photography gear. Whether you&apos;re a beginner looking for affordable equipment or a professional photographer in search of high-end gear at a discounted price, we&apos;ve got you covered. </p>
+        </div>
+    )
+}
 
-            <div className={Style.__topSellers}>
-                <h3 className={Style.__topSellers_title}>Top sellers this month</h3>
+const SectionSellers = () => {
+    return (
+        <div className={Style.__topSellers}>
+            <h3 className={Style.__topSellers_title}>Top sellers this month</h3>
 
-                <div className={Style.__topSellers_cards}>
-                    {TOP_SELLERS.map((seller, index) => (
-                        <SellerCard {...seller} key={index} />
-                    ))}
-                </div>
+            <div className={Style.__topSellers_cards}>
+                {TOP_SELLERS.map((seller, index) => (
+                    <SellerCard {...seller} key={index} />
+                ))}
             </div>
+        </div>
+    )
+}
 
-            <div className={Style.__area_actions}>
-                <button className={Style.__actions_buy}>Buy</button>
-                <button className={Style.__actions_sell}>Sell</button>
-            </div>
+const SectionActions = () => {
+    return (
+        <div className={Style.__area_actions}>
+            <button className={Style.__actions_buy}>Buy</button>
+            <button className={Style.__actions_sell}>Sell</button>
         </div>
     )
 }
@@ -122,7 +128,9 @@ const SectionSavings = () => {
 
                 <div className={Style.__area_body}>
                     <SectionImage />
-                    <SectionContent />
+                    <SectionHead />
+                    <SectionSellers />
+                    <SectionActions />
                 </div>
             </Container>
         </section>
