@@ -79,8 +79,8 @@ const FooterBar = () => {
     return (
         <Container className={Style.__footerBar}>
             <p className={Style.__copyright}>
-                © 2023 PIXEL.<br />
-                All Rights Reserved
+                <span>© 2023 PIXEL.</span>
+                <span>All Rights Reserved</span>
             </p>
 
             <Cards />

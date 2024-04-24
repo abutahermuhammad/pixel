@@ -1,7 +1,7 @@
 @import "./../../styles/typography.scss";
 
 .__area {
-    @apply relative w-full bg-black pt-[27px] pb-[33px];
+    @apply relative w-full bg-[#000] md:bg-black pt-[22px] md:pt-[27px] pb-[39px] md:pb-[33px];
 
     // Footer Top Section
     .__top_container {
@@ -62,9 +62,14 @@
         }
     }
 
+
+
+
+
+
     // Footer Middle Section
     .__middle_container {
-        @apply w-full grid grid-cols-3 pt-[25px] border-t-[3px] border-t-dark-grey;
+        @apply mb-[45px] w-full grid grid-cols-3 pt-[25px] border-t-[3px] border-t-dark-grey;
     }
     .__menus {
         @apply flex gap-[87px];
@@ -90,16 +95,16 @@
 
     // FooterBar
     .__footerBar {
-        @apply mt-[45px] w-full grid grid-cols-3 gap-[30px] text-dark-grey subText;
+        @apply w-full max-md:flex max-md:flex-col-reverse max-md:items-center md:grid md:grid-cols-3 md:gap-[30px] text-dark-grey max-md:text-gray subText;
 
         .__copyright {
-            @apply me-auto;
+            @apply max-md:w-full max-md:mt-[11.25px] me-auto flex flex-row max-md:justify-center md:flex-col;
         }
         .__cards {
-            @apply -mb-2.5 w-max flex items-end gap-2 mx-auto;
+            @apply md:-mb-2.5 max-md:mt-[17px] w-max flex items-end gap-[15px] md:gap-2 mx-auto;
         }
         .__links {
-            @apply ms-auto w-max flex items-end gap-[50px];
+            @apply md:ms-auto w-max flex items-end gap-[14px] md:gap-[50px];
             .__link {
                 @apply hover:text-gray;
             }
