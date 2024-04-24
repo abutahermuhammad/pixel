@@ -3,7 +3,7 @@
 .__section {
   @apply w-full relative block;
   .__section_container {
-    @apply relative pt-7 md:pt-[73px] grid grid-cols-2 max-md:grid-rows-2 md:grid-cols-3 gap-3 md:gap-4;
+    @apply relative pt-7 max-md:pb-[31px] md:pt-[73px] grid grid-cols-2 max-md:grid-rows-2 md:grid-cols-3 gap-3 md:gap-4;
 
     // Card
     .__card {
