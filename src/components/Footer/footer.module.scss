@@ -116,16 +116,16 @@
 
   // FooterBar
   .__footerBar {
-    @apply w-full max-md:flex max-md:flex-col-reverse max-md:items-center md:grid md:grid-cols-3 md:gap-[30px] text-dark-grey max-md:text-gray subText;
+    @apply w-full max-xl:flex max-xl:flex-col-reverse max-xl:items-center xl:grid xl:grid-cols-3 xl:gap-[30px] text-dark-grey max-xl:text-gray subText;
 
     .__copyright {
-      @apply max-md:w-full max-md:mt-[11.25px] me-auto flex flex-row max-md:justify-center md:flex-col;
+      @apply max-xl:w-full max-xl:mt-[11.25px] me-auto flex flex-row max-xl:justify-center xl:flex-col;
     }
     .__cards {
-      @apply md:-mb-2.5 max-md:mt-[17px] w-max flex items-end gap-[15px] md:gap-2 mx-auto;
+      @apply xl:-mb-2.5 max-xl:mt-[17px] w-max flex items-end gap-[15px] xl:gap-2 mx-auto;
     }
     .__links {
-      @apply md:ms-auto w-max flex items-end gap-[14px] md:gap-[50px];
+      @apply xl:ms-auto w-max flex items-end gap-[14px] xl:gap-[50px];
       .__link {
         @apply hover:text-gray;
       }
