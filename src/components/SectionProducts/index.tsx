@@ -141,7 +141,7 @@ const SectionProducts = () => {
             <Container className={Style.__area_container}>
                 <Swiper
                     className=''
-                    spaceBetween={35}
+                    // spaceBetween={35}
                     // slidesPerView={5}
                     freeMode={true}
                     breakpoints={{
@@ -150,10 +150,12 @@ const SectionProducts = () => {
                             spaceBetween: 22
                         },
                         1024: {
-                            slidesPerView: 3.3
+                            slidesPerView: 3.3,
+                            spaceBetween: 35
                         },
                         1440: {
-                            slidesPerView: 5
+                            // slidesPerView: 5,
+                            spaceBetween: 70
                         }
                     }}
                     modules={[FreeMode]}

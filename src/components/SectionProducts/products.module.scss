@@ -4,16 +4,17 @@
   @apply relative block w-full;
 }
 .__area_container {
-  @apply max-md:py-[31px] md:py-12 xl:pt-[83px] w-full relative max-xl:border-t max-xl:border-t-light-gray max-md:overflow-y-hidden;
+  @apply w-full max-md:py-[31px] md:py-12 xl:pt-[83px] w-full relative max-xl:border-t max-xl:border-t-light-gray max-md:overflow-y-hidden;
 
   .__card_wrapper {
-    @apply max-w-[296px] border-e border-e-gray;
+    @apply w-[325px] border-e border-e-gray;
   }
 }
 
 // Product Card
 .__card {
-  @apply me-[35px] relative max-md:w-[223px] md:w-[256px] h-[448px] flex flex-col justify-start items-center gap-4 overflow-hidden;
+  // @apply me-[35px] relative max-md:w-[223px] md:w-[256px] h-[448px] flex flex-col justify-start items-center gap-4 overflow-hidden;
+  @apply mx-[35px] relative max-md:w-[223px] md:w-[256px] h-[448px] flex flex-col justify-start items-center gap-4 overflow-hidden;
   &:hover {
     .__info {
       @apply hidden transition-all duration-300;
