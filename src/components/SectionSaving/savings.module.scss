@@ -1,49 +1,49 @@
 @import "./../../styles/typography.scss";
 
 .__area {
-  @apply relative w-full max-md:border-t max-md:border-t-light-gray;
+  @apply relative w-full max-xl:border-t max-xl:border-t-light-gray;
   .__area_container {
-    @apply w-full py-[31px] md:pt-[81px] md:pb-[110px];
+    @apply w-full py-[31px] xl:pt-[81px] xl:pb-[110px];
     .__area_title {
-      @apply max-md:hidden h2 mb-2;
+      @apply max-xl:hidden h2 mb-2;
     }
 
     .__area_body {
-      @apply md:max-h-[455px] grid grid-cols-12 md:grid-rows-6 md:gap-x-[36px] md:gap-y-[40px];
+      @apply xl:max-h-[455px] grid grid-cols-12 xl:grid-rows-6 xl:gap-x-[36px] xl:gap-y-[40px];
       .__area_image {
-        @apply col-start-1 col-end-13 md:col-end-6 md:row-start-1 md:row-end-7 max-md:order-2 w-full;
+        @apply col-start-1 col-end-13 xl:col-end-6 xl:row-start-1 xl:row-end-7 max-xl:order-2 w-full;
         img {
           @apply w-full max-md:max-w-[332px] object-cover;
         }
       }
 
       .__area_head {
-        @apply col-start-1 col-end-13 md:col-start-6 md:col-end-13 md:row-start-1 md:row-end-3 max-md:order-1;
+        @apply col-start-1 col-end-13 xl:col-start-6 xl:col-end-13 xl:row-start-1 xl:row-end-3 max-xl:order-1;
 
         .__area_title {
-          @apply h2 mb-0 md:mb-[13px] text-black block;
+          @apply h2 mb-0 xl:mb-[13px] text-black block;
         }
         .__area_description {
-          @apply max-md:mb-2 text text-black;
+          @apply max-xl:mb-2 text text-black;
         }
       }
 
       .__topSellers {
         // @apply mb-[42px] max-w-[880px];
-        @apply mt-2.5 col-start-1 col-end-13 md:col-start-6 md:col-end-13 md:row-start-3 md:row-end-6 max-md:order-3;
+        @apply mt-2.5 col-start-1 col-end-13 xl:col-start-6 xl:col-end-13 xl:row-start-3 xl:row-end-6 max-xl:order-3;
 
         .__topSellers_title {
-          @apply h3 text-black mb-[11px] md:mb-2;
+          @apply h3 text-black mb-[11px] xl:mb-2;
         }
 
         .__topSellers_cards {
-          @apply flex max-md:flex-col justify-start items-start gap-[30px] md:gap-[90px];
+          @apply flex max-md:flex-col justify-start items-start gap-[30px] md:gap-8 xl:gap-[90px];
         }
       }
 
       // Actions
       .__area_actions {
-        @apply col-start-1 col-end-13 md:col-start-6 md:col-end-13 md:row-start-6 md:row-end-7 max-md:order-5 flex justify-start items-center gap-[23px];
+        @apply md:max-xl:mt-5 col-start-1 col-end-13 xl:col-start-6 xl:col-end-13 xl:row-start-6 xl:row-end-7 max-xl:order-5 flex justify-start items-center gap-[23px];
 
         .__actions_buy {
           @extend .button;
@@ -61,23 +61,23 @@
 
 // Card
 .__card {
-  @apply w-full max-w-[248px];
+  @apply w-full md:max-w-[248px];
   .__card_head {
-    @apply flex justify-start items-start gap-[7px];
+    @apply flex justify-start items-center md:items-start gap-[7px];
 
     .__avatar {
       @apply w-full h-full max-w-[75px] max-h-[75px];
     }
     .__card_info {
-      @apply w-full max-w-[166px];
+      @apply w-full md:max-w-[166px] max-md:flex max-md:justify-between max-md:items-center max-md:flex-wrap;
       .__seller_name {
-        @apply text text-black mb-[3px];
+        @apply text text-black mb-[3px] max-md:w-max max-md:order-1;
       }
       .__seller_description {
-        @apply subText text-black mb-[3px];
+        @apply subText text-black mb-[3px] max-md:w-max max-md:order-3;
       }
       .__verifiedBadge {
-        @apply flex justify-start items-center gap-[6px];
+        @apply flex justify-start items-center gap-[6px] max-md:w-max max-md:order-2;
 
         .__badge_icon {
           @apply w-[15px] h-[15px];
@@ -90,9 +90,9 @@
   }
 
   .__seller_body {
-    @apply w-full max-w-[166px] mt-[13px];
+    @apply w-full md:max-w-[166px] mt-[13px];
     .__body_list {
-      @apply ms-[21px] w-full subText text-dark-grey list-disc;
+      @apply max-md:ms-[82px] md:ms-[21px] w-full subText text-dark-grey list-disc;
       .__body_line {
       }
     }
