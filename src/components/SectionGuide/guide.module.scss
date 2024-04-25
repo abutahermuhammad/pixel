@@ -4,12 +4,12 @@
   @apply w-full;
 
   .__section_container {
-    @apply py-[31px] md:pt-[73px] w-full flex max-md:flex-col justify-start gap-[15px] max-md:border-t max-md:border-t-light-gray;
+    @apply max-lg:max-w-fit max-xl:max-w-[792px] py-[31px] lg:max-xl:pb-[73px] lg:pt-[73px] w-full flex max-xl:flex-col justify-start gap-[15px] max-xl:border-t max-xl:border-t-light-gray;
   }
 }
 
 .__section_image {
-  @apply max-md:hidden w-full max-w-[792px] object-cover;
+  @apply max-lg:hidden w-full max-w-[792px] object-cover;
 }
 .__section_content {
 }
@@ -19,19 +19,19 @@
   @apply w-full max-w-[658px];
 
   .__section_title {
-    @apply max-md:w-[236px] h2 text-black;
+    @apply max-lg:w-[236px] h2 text-black;
   }
   .__section_description {
-    @apply text mb-[13px] md:mb-2;
+    @apply text mb-[13px] lg:mb-2;
   }
 }
 
 // Form
 .__form {
-  @apply w-full md:max-w-[269px] mb-3 md:mb-[14px];
+  @apply w-full lg:max-w-[269px] mb-3 lg:mb-[14px];
 
   .__input_wrapper {
-    @apply w-full flex max-md:flex-row-reverse max-md:bg-light-gray justify-start items-center gap-[14.4px] max-md:pe-[19px] md:ps-[11px];
+    @apply w-full flex max-lg:flex-row-reverse max-lg:bg-light-gray justify-start items-center gap-[14.4px] max-lg:pe-[19px] lg:ps-[11px];
 
     .__input_icon {
       @apply w-[17.6px] h-[17.58px];
@@ -40,28 +40,28 @@
       }
     }
     .__input_field {
-      @apply max-md:ps-[19px] md:pe-[11px] pt-[11px] pb-[10px] w-full;
+      @apply max-lg:ps-[19px] lg:pe-[11px] pt-[11px] pb-[10px] w-full;
     }
   }
 }
 
 // Guides
 .__section_guides {
-  @apply flex flex-col items-start justify-start gap-[30px] md:gap-[14px];
+  @apply flex flex-col items-start justify-start gap-[30px] lg:gap-[14px];
 }
 
 // Guide Card
 .__guide_card {
-  @apply w-full h-full flex max-md:flex-col gap-[5px] md:gap-2 md:gap-[23px];
+  @apply w-full h-full flex max-lg:flex-col gap-[5px] lg:gap-2 lg:gap-[23px];
 
   .__card_thumbnail {
-    @apply w-full h-full md:max-w-[269px] max-h-[147px] object-cover overflow-hidden;
+    @apply w-full h-full lg:max-w-[269px] max-h-[147px] object-cover overflow-hidden;
     img {
       @apply w-full h-full object-cover;
     }
   }
   .__card_content {
-    @apply w-full max-w-[365px] md:py-2 flex flex-col justify-between items-start;
+    @apply w-full max-w-[365px] lg:py-2 flex flex-col justify-between items-start;
   }
 
   .__card_info {
@@ -69,12 +69,12 @@
       @apply h3 text-black;
     }
     .__card_description {
-      @apply max-md:mt-[1px] text text-black;
+      @apply max-lg:mt-[1px] text text-black;
     }
   }
 
   .__card_link {
-    @apply max-md:mt-1 text text-dark-grey flex items-end gap-3 border-b border-b-dark-grey;
+    @apply max-lg:mt-1 text text-dark-grey flex items-end gap-3 border-b border-b-dark-grey;
     &:hover {
       @apply text-primary border-b-primary;
 

@@ -4,7 +4,7 @@
   @apply relative block w-full;
 }
 .__area_container {
-  @apply max-md:py-[31px] md:pt-[83px] w-full relative max-md:border-t max-md:border-t-light-gray;
+  @apply max-md:py-[31px] md:py-12 xl:pt-[83px] w-full relative max-xl:border-t max-xl:border-t-light-gray max-md:overflow-y-hidden;
 
   .__card_wrapper {
     @apply max-w-[296px] border-e border-e-gray;

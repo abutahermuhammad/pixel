@@ -3,7 +3,7 @@
 .__area {
   @apply relative w-full max-xl:border-t max-xl:border-t-light-gray;
   .__area_container {
-    @apply w-full py-[31px] xl:pt-[81px] xl:pb-[110px];
+    @apply w-full lg:max-xl:max-w-[792px] py-[31px] xl:pt-[81px] xl:pb-[110px];
     .__area_title {
       @apply max-xl:hidden h2 mb-2;
     }

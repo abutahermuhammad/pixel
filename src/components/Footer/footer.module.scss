@@ -5,27 +5,27 @@
 
   // Footer Top Section
   .__top_container {
-    @apply w-full md:max-[1600px]:px-[56px] min-[1600px]:max-w-[1532px] pb-[39px] md:pb-[31px] flex max-md:flex-col-reverse max-md:items-center md:justify-between;
+    @apply w-full xl:max-[1600px]:px-[56px] min-[1600px]:max-w-[1532px] pb-[39px] xl:pb-[31px] flex max-xl:flex-col-reverse max-xl:items-center xl:justify-between;
 
     // Contact Area
     .__contact {
-      @apply max-md:w-full flex max-md:flex-col-reverse items-center max-md:gap-[23px] md:gap-[30px];
+      @apply max-xl:w-full flex max-xl:flex-col-reverse items-center max-xl:gap-[23px] xl:gap-[30px];
       .__mapBox {
-        @apply relative w-full max-w-full md:max-w-[219px] max-h-[163px] block;
+        @apply relative w-full max-w-full xl:max-w-[219px] max-h-[163px] block;
       }
       .__address {
-        @apply max-md:w-full max-md:flex max-md:flex-wrap;
+        @apply max-xl:w-full max-xl:flex max-xl:flex-wrap;
 
         .__title {
-          @apply max-md:w-full h3 text-white mb-[7px];
+          @apply max-xl:w-full h3 text-white mb-[7px];
         }
         .__address_line {
-          @apply max-md:w-1/2 md:ms-[3px] flex max-md:gap-[7.21px] md:gap-[17px] md:items-center md:mt-[15px];
+          @apply max-xl:w-1/2 xl:ms-[3px] flex max-xl:gap-[7.21px] xl:gap-[17px] xl:items-center xl:mt-[15px];
           &:first-of-type {
             @apply mt-0;
           }
           .__icon {
-            @apply max-md:w-[14.35px] md:w-[24px] md:max-h-[24px];
+            @apply max-xl:w-[14.35px] xl:w-[24px] xl:max-h-[24px];
           }
           .__address_text {
             @apply text text-dark-grey;
@@ -41,7 +41,7 @@
 
     // Newsletter Area
     @at-root .__newsletter {
-      @apply w-full max-w-[454px] max-md:hidden;
+      @apply w-full max-w-[454px] max-xl:hidden;
       .__newsletter_title {
         @apply h3 text-white mb-[11px];
       }
@@ -72,7 +72,7 @@
 
   // Footer Middle Section
   .__middle_container {
-    @apply max-md:mb-[36px] md:mb-[45px] w-full grid grid-cols-1 md:grid-cols-3 md:pt-[25px] md:border-t-[3px] md:border-t-dark-grey;
+    @apply max-md:mb-[36px] md:mb-[45px] w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:pt-[25px] md:border-t-[3px] md:border-t-dark-grey;
     .__newsletter {
       @apply max-md:block md:hidden mt-6;
 
@@ -91,7 +91,7 @@
     }
   }
   .__menus {
-    @apply flex gap-[29px] md:gap-[87px];
+    @apply flex gap-[29px] md:gap-10 lg:gap-[87px];
     .__shop {
       @apply w-[102px] md:w-[218px] flex max-md:flex-col gap-[1px] md:gap-[29px] justify-start items-end;
       .__menu {
@@ -100,7 +100,7 @@
     }
   }
   .__currencies {
-    @apply max-md:hidden mx-auto grid grid-cols-2 gap-[5px];
+    @apply max-xl:hidden mx-auto grid grid-cols-2 gap-[5px];
     .__currency {
       @apply px-3 py-[1px] h3 text-gray bg-none border border-gray w-max h-[32px] flex justify-center items-center;
       &:first-of-type,

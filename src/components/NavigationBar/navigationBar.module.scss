@@ -2,93 +2,94 @@
 @use "./../../styles/variables";
 
 .__header {
-    // @apply bg-black h-[68px] md:h-[172px] flex flex-col z-20;
-    @apply bg-black h-full max-h-[172px] flex flex-col z-20;
+  // @apply bg-black h-[68px] md:h-[172px] flex flex-col z-20;
+  @apply bg-black h-full max-h-[172px] flex flex-col z-20;
 }
 
 .__primaryNav {
-    // @apply  h-[68px] md:h-[87px] bg-black text-white ;
-    @apply w-full h-[68px] md:h-[87px] flex justify-center items-center ;
+  // @apply  h-[68px] md:h-[87px] bg-black text-white ;
+  @apply w-full h-[68px] lg:h-[87px] flex justify-center items-center;
 
-    .__primaryNav__container {
-        @apply flex justify-between items-center py-5 md:pt-[27px] md:pb-[30px];
-        
-        // Hamburger Menu Icon
-        .__menuIcon {
-            @apply w-[24px] h-[19px] md:hidden;
-        }
+  .__primaryNav__container {
+    @apply flex justify-between items-center py-5 lg:pt-[27px] lg:pb-[30px];
 
-        // Brand Logo
-        .__logo {
-            @apply w-[72px] h-[18.72px] md:w-[116px] md:h-[30px];
-            margin-left: clamp(27px, 3.5vw, 67px);
-        }    
-        
-        // Action Menu
-        .__actionMenu {
-            @apply w-full max-w-max flex justify-end items-center gap-3 md:gap-[31px];
-            
-            .__menuLink {
-                &:nth-of-type(3) {
-                    @apply max-md:hidden;
-                }
-                svg {
-                    @apply w-auto h-[24px] md:h-[30px];
-                }
-            }
-        }
+    // Hamburger Menu Icon
+    .__menuIcon {
+      @apply w-[24px] h-[19px] lg:hidden;
     }
-}
 
+    // Brand Logo
+    .__logo {
+      @apply w-[72px] h-[18.72px] lg:w-[116px] lg:h-[30px];
+      margin-left: clamp(27px, 3.5vw, 67px);
+    }
+
+    // Action Menu
+    .__actionMenu {
+      @apply w-full max-w-max flex justify-end items-center gap-3 lg:gap-[31px];
+
+      .__menuLink {
+        &:nth-of-type(3) {
+          @apply max-lg:hidden;
+        }
+        svg {
+          @apply w-auto h-[24px] lg:h-[30px];
+        }
+      }
+    }
+  }
+}
 
 // Secondary Menu
 .__secondaryNav {
-    @apply w-full max-md:hidden;
+  @apply w-full max-lg:hidden;
 
-    .__container {
-        .__menu {
-            @apply w-full inline-flex justify-between items-center;
-        
-            .__menuItem {
-                @apply w-full max-w-[266px] h-[85px] text-[#E9E9E9] flex justify-center items-center font-medium text-center hover:bg-primary h3 transition-colors duration-200 ease-in-out;
-                &:hover {
-                    .__megaMenu {
-                        @apply visible opacity-100 top-[172px];
-                        transition:.5s opacity, .2s top ease-in; 
-                    }
-                }
+  .__container {
+    .__menu {
+      @apply w-full inline-flex justify-between items-center;
 
-                .__menuLink {
-                    @apply uppercase;
-                }
-            }
+      .__menuItem {
+        @apply w-full max-w-[266px] h-[85px] text-[#E9E9E9] flex justify-center items-center font-medium text-center hover:bg-primary h3 transition-colors duration-200 ease-in-out;
+        &:hover {
+          .__megaMenu {
+            @apply visible opacity-100 top-[172px];
+            transition: 0.5s opacity, 0.2s top ease-in;
+          }
         }
-    }
-}
 
+        .__menuLink {
+          @apply uppercase;
+        }
+      }
+    }
+  }
+}
 
 // Mega Menu
 .__megaMenu {
-    @apply w-full absolute top-[160px] left-0 right-0 z-10 bg-white invisible opacity-0 text-left;
-    transition: .5s opacity, .2s top ease-in; 
-    .__megaMenu__container {
-        @apply pt-[33px] pb-[41px] max-w-[921px] box-content grid grid-cols-3;
+  @apply w-full absolute top-[160px] left-0 right-0 z-10 bg-white invisible opacity-0 text-left;
+  transition: 0.5s opacity, 0.2s top ease-in;
+  .__megaMenu__container {
+    @apply pt-[33px] pb-[41px] max-w-[921px] box-content grid grid-cols-3;
 
-        .__megaMenu__category {
-            .__category_title {
-                @apply h3 mb-[5px] text-black underline uppercase;
-            }
-            .__category_links {
-                @apply text text-black;
-                .__megaMenuItem {
-                    .__megaMenuLink {}
-                }
-            }
+    .__megaMenu__category {
+      .__category_title {
+        @apply h3 mb-[5px] text-black underline uppercase;
+      }
+      .__category_links {
+        @apply text text-black;
+        .__megaMenuItem {
+          .__megaMenuLink {
+          }
         }
+      }
     }
-    .__megaMenu__content {}
-    .__megaMenuItem {
-        @apply text;
-    }
-    .__megaMenuLink {}
+  }
+  .__megaMenu__content {
+  }
+  .__megaMenuItem {
+    @apply text;
+  }
+  .__megaMenuLink {
+  }
 }

@@ -3,13 +3,13 @@
 .__section {
   @apply w-full relative block;
   .__section_container {
-    @apply relative pt-7 max-md:pb-[31px] md:pt-[73px] grid grid-cols-2 max-md:grid-rows-2 md:grid-cols-3 gap-3 md:gap-4;
+    @apply max-xl:max-w-fit relative pt-7 md:pt-12 pb-[31px]  max-lg:pb-12 lg:max-xl:pb-[73px] lg:pt-[73px] grid grid-cols-2 max-lg:grid-rows-2 lg:grid-cols-3 gap-3 lg:gap-4;
 
     // Card
     .__card {
-      @apply relative w-full md:max-w-[523px] md:h-[400px] flex max-md:flex-col justify-center items-center;
+      @apply relative w-full lg:max-w-[523px] lg:h-[400px] flex max-lg:flex-col justify-center items-center;
       &:nth-of-type(4) {
-        @apply md:hidden;
+        @apply lg:hidden;
       }
       &:hover {
         .__card_image {
@@ -17,31 +17,31 @@
           transition: filter 0.3s ease;
         }
         .__card_icon {
-          @apply md:-translate-x-14;
+          @apply lg:-translate-x-14;
         }
       }
 
       .__card_image {
-        @apply bg-red-400 md:absolute md:top-0 md:left-0 md:right-0 md:bottom-0 w-full h-full object-cover z-0;
+        @apply bg-red-400 lg:absolute lg:top-0 lg:left-0 lg:right-0 lg:bottom-0 w-full h-full object-cover z-0;
         transition: filter 0.3s ease;
         img {
           @apply w-full h-full object-cover;
         }
       }
       .__card_container {
-        @apply w-full md:h-full md:py-[23px] md:ps-[29px] md:pe-[31px] flex justify-between items-end z-10;
+        @apply w-full lg:h-full lg:py-[23px] lg:ps-[29px] lg:pe-[31px] flex justify-between items-end z-10;
 
         .__card_details {
-          @apply w-full md:max-w-[calc(100%-27px)] max-md:flex max-md:justify-between max-md:items-center;
+          @apply w-full lg:max-w-[calc(100%-27px)] max-lg:flex max-lg:justify-between max-lg:items-center;
 
           .__card_title {
-            @apply h2 max-md:text-black md:text-white;
+            @apply h2 max-lg:text-black lg:text-white;
           }
           .__card_description {
-            @apply max-md:hidden text-gray text max-w-[calc(100%-47px)];
+            @apply max-lg:hidden text-gray text max-w-[calc(100%-47px)];
           }
           .__card_icon {
-            @apply w-[14px] h-[14px] max-h-[14px] md:w-[27px] md:h-[27px] md:absolute md:bottom-[23px] md:right-[31px] transition-all duration-300;
+            @apply w-[14px] h-[14px] max-h-[14px] lg:w-[27px] lg:h-[27px] lg:absolute lg:bottom-[23px] lg:right-[31px] transition-all duration-300;
           }
         }
         .__card_link {
