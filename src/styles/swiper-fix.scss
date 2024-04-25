@@ -1,9 +1,5 @@
 // Swiper Fix
-.swiper {
-  @apply max-md:overflow-x-hidden;
-}
 .swiper-pagination-bullets {
-  @apply max-md:bottom-[31.45px] md:bottom-[58.47px];
   .swiper-pagination-bullet {
     @apply mx-[8.23px] md:mx-[14px] bg-transparent border-2 border-white rounded-full w-[15.47px] h-[15.47px] opacity-100;
     // margin-left: 14px !important;
@@ -12,5 +8,17 @@
     &.swiper-pagination-bullet-active {
       @apply bg-primary border-primary;
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-pagination-bullets {
+    bottom: 31.45px !important;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .swiper-pagination-bullets {
+    bottom: 58.47px !important;
   }
 }
