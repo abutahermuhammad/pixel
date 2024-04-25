@@ -47,7 +47,7 @@ const Slide: React.FC<{
     return (
         <div className={Style.__slide}>
             <div className={Style.__slide__image}>
-                <Image src={image} width={1968} height={727} alt={title} />
+                <Image className="" src={image} width={1968} height={727} layout="responsive" alt={title} />
             </div>
             <div className={Style.__slide__container}>
                 <Container>
@@ -71,14 +71,12 @@ const Slide: React.FC<{
 const HeroSlider = () => {
     return (
         <section className={Style.__slider} >
-            <Swiper slidesPerView={1} pagination={{ clickable: true }} virtual modules={[Virtual, Pagination]}>
-                {
-                    SLIDES.map((slide, index) => (
-                        <SwiperSlide key={index} virtualIndex={index}>
-                            <Slide {...slide} />
-                        </SwiperSlide>
-                    ))
-                }
+            <Swiper slidesPerView={1} pagination={{ clickable: true }} modules={[Pagination]}>
+                {SLIDES.map((slide, index) => (
+                    <SwiperSlide key={index} >
+                        <Slide {...slide} />
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </section >
     )
